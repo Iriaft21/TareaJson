@@ -3,6 +3,7 @@ package org.example;
 import java.util.List;
 
 public class Prediccion {
+    //atributos de la clase
     private String lugar;
     private String fecha;
     private List<String> estadoCielo;
@@ -13,6 +14,7 @@ public class Prediccion {
     private double coberturaNubosa;
     private double humedad;
 
+    //constructor de la clase
     public Prediccion(String lugar, String fecha, List<String> estadoCielo, double temperaturaMax, double temperaturaMin, double precipitacionTotal,
                       double velocidadViento, double coberturaNubosa, double humedad) {
         this.lugar = lugar;
@@ -26,6 +28,7 @@ public class Prediccion {
         this.humedad = humedad;
     }
 
+    //getters y setters de la clase
     public String getFecha() {
         return fecha;
     }
@@ -98,6 +101,7 @@ public class Prediccion {
         this.humedad = humedad;
     }
 
+    //metodo toString
     @Override
     public String toString() {
         return  lugar + "\n" +
