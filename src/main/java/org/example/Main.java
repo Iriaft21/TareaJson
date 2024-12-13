@@ -65,6 +65,12 @@ public class Main {
                     generarPredicciones(predicciones);
                     escribirCSV(direccionArchivo, predicciones);
                     break;
+                case 3:
+                    //avisamos que estamos saliendo del programa
+                    System.out.println("Saliendo del programa...");
+                default:
+                    //avisa que no pulsaste ninguna de las opciones
+                    System.out.println("Inserte un número que corresponda al 1, 2 o 3");
             }
         }while(respuesta != 3); //repetir hasta que el usuario seleccione el numero 3
     }
